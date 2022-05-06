@@ -1,5 +1,4 @@
 let sueldoActual: number = Number(prompt("ingrese sueldo:"));
-
 let nuevoSueldo: number = 0;
 switch (nuevoSueldo) {
   case 1:
