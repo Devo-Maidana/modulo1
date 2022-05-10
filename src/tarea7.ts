@@ -15,11 +15,13 @@ while (num !== 0) {
   num = Number(prompt("Ingrese un numero"));
 }
 
-// le digo al codigo Si catidadToal se cumple mostrar el 75 % del total de cantidad de positivos
+// le digo al codigo Si catidadToal se cumple mostrar el 
+//75 % del total de cantidad de positivos
 if (cantidadTotal > 0) {
   porcentajePositivos = (cantidadPositivos * 100) / cantidadTotal;
 
   console.log(
-    +cantidadPositivos + " positivos " + porcentajePositivos + " % del total."
+    +cantidadPositivos + " positivos " 
+    + porcentajePositivos + " % del total."
   );
 }
