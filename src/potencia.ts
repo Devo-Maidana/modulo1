@@ -9,4 +9,4 @@ function calcularPotencia(base: number, exponente: number): number {
   return resultado;
 }
 
-console.log(calcularPotencia(base, exponente));
+console.log(calcularPotencia(base,exponente));
