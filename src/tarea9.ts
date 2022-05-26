@@ -7,7 +7,7 @@
 //Luego de resolverlo, pensar en aprovechar métodos y
 //discutir como representar la información
 
-//declaro lo que voy a usar y pasar 2 notas de alumnos por cada array
+//declaro lo que voy a usar y pasar 3 notas de alumnos por cada array
 let trimestre1: number[] = new Array(3);
 let trimestre2: number[] = new Array(3);
 let trimestre3: number[] = new Array(3);
