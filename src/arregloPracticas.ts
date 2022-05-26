@@ -1,3 +1,4 @@
+//declaro lo que vy a usar
 let valor1: number[] = new Array(3);
 let valor2: number[] = new Array(3);
 let valorMultiplicacion: number[] = new Array(3);
