@@ -4,19 +4,19 @@ let trimestre3: number[] = new Array(3);
 let valorpromedio: number[] = new Array(3);
 let indice: number;
 let suma: number;
-let nota1, nota2, nota3;
+let nota1, nota2, nota3: number;
 //Cargo el vector de valores para notas1
-for (let indice = 0; indice < 3; indice++) {
+for (indice = 0; indice < 3; indice++) {
   suma = nota1 + nota2 + nota3;
-  let trimestre110 = Number(prompt(`Ingrese notas alumno juan`));
+  trimestre1[indice] = Number(prompt(`Ingrese notas alumno juan`));
 }
 //Cargo el vector de valores para notas2
-for (let indice = 0; indice < 3; indice++) {
+for (indice = 0; indice < 3; indice++) {
   suma = nota1 + nota2 + nota3;
   trimestre2[indice] = Number(prompt(`Ingrese notas alumno mateo`));
 }
 ////Cargo el vector de valores para notas3
-for (let indice = 0; indice < 3; indice++) {
+for (indice = 0; indice < 3; indice++) {
   suma = nota1 + nota2 + nota3;
   trimestre3[indice] = Number(prompt(`Ingrese notas alumna rocio`));
 }
