@@ -3,11 +3,11 @@
 function registrarCompra(): void {
   for (let i: number = 0; i < cantidadDeProductos; i++) {
     productos[i] = prompt("Ingrese nombre del producto: ");
-    precioUnitarioDeProductos[i] = Number(
+    precioUProductos[i] = Number(
       prompt("Ingrese el precio de " + productos[i] + ":")
     );
-    while (precioUnitarioDeProductos[i] <= 0) {
-      precioUnitarioDeProductos[i] = Number(
+    while (precioUProductos[i] <= 0) {
+      precioUProductos[i] = Number(
         prompt(
           "Error ingrese el precio de " + productos[i] + " correspondiente:"
         )
@@ -30,13 +30,12 @@ function registrarCompra(): void {
 function detallarCompra(): void {
   let precioFinalDelProducto: number = 0;
   for (let i: number = 0; i < cantidadDeProductos; i++) {
-    precioFinalDelProducto =
-      cantidadDeCadaArticulo[i] * precioUnitarioDeProductos[i];
+    precioFinalDelProducto = cantidadDeCadaArticulo[i] * precioUProductos[i];
     console.log(
       productos[i],
       cantidadDeCadaArticulo[i] +
         " uni * $" +
-        precioUnitarioDeProductos[i] +
+        precioUProductos[i] +
         "c/u = $" +
         precioFinalDelProducto
     );
@@ -81,7 +80,7 @@ let cantidadDeProductos: number = Number(
 //Arreglo que almacena los productos
 let productos: string[] = new Array(cantidadDeProductos);
 //Arreglo que almacena el precio
-let precioUnitarioDeProductos: number[] = new Array(cantidadDeProductos);
+let precioUProductos: number[] = new Array(cantidadDeProductos);
 //Arreglo que almacena la cantidad
 let cantidadDeCadaArticulo: number[] = new Array(cantidadDeProductos);
 //Variable  precio final de la compra
